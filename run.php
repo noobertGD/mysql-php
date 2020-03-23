@@ -44,13 +44,9 @@ $check = true;
 $currentDatabaseName = "";
 $rec = false;
 $databases = [];
-$tables = [];
 $record = 0;
 $repeat = false;
-if (file_exists(__DIR__ . "/tables")) {
-    $tabt = file_get_contents("tables");
-    $tables = unserialize($tabt);
-}
+
 if (file_exists(DATABASE_FILE)) {
 
     $tabt = file_get_contents(DATABASE_FILE);
